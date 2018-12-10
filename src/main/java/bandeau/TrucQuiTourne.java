@@ -10,5 +10,12 @@ package bandeau;
  * @author cbason
  */
 public class TrucQuiTourne {
+    private Bandeau bd;
+    private int nb;
     
+    public TrucQuiTourne (int n){
+        n=nb;
+        
+	myPanel.sleep(millis);
+	}
 }
