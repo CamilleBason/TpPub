@@ -18,8 +18,9 @@ public class Zoom {
     public Zoom (Bandeau b, int n){
         n=nb;
         b=bd;
+        bd.setMessage("On va zoomer "+nb+" fois!");
         int j=0;
-        while (j<=n){
+        while (j<=nb){
             for (int i = 5; i < 60 ; i+=5) {
 			bd.setFont(new Font("Dialog", Font.BOLD, 5+i));
 			bd.sleep(100);}

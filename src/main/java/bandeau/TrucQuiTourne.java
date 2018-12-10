@@ -16,8 +16,9 @@ public class TrucQuiTourne {
     public TrucQuiTourne (Bandeau b, int n){
         n=nb;
         b=bd;
+        bd.setMessage("On va tourner "+nb+" fois!");
         int i=0;
-        while (i<=n){
+        while (i<=nb){
 	bd.sleep(100);
         i=i+1;
 	}
