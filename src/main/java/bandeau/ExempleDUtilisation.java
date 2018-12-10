@@ -2,7 +2,6 @@ package bandeau;
 
 import java.awt.Color;
 import java.awt.Font;
-//la est-ce que tu vois 
 public class ExempleDUtilisation {
     private final Bandeau monBandeau = new Bandeau();
     
