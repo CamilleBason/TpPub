@@ -5,21 +5,25 @@
  */
 package bandeau;
 
+import java.awt.Font;
+
 /**
  *
  * @author cbason
  */
-public class TrucQuiTourne {
-    private Bandeau bd;
+public class Zoom {
+   private Bandeau bd;
     private int nb;
     
-    public TrucQuiTourne (Bandeau b, int n){
+    public Zoom (Bandeau b, int n){
         n=nb;
         b=bd;
-        int i=0;
-        while (i<=n){
-	bd.sleep(100);
-        i=i+1;
+        int j=0;
+        while (j<=n){
+            for (int i = 5; i < 60 ; i+=5) {
+			bd.setFont(new Font("Dialog", Font.BOLD, 5+i));
+			bd.sleep(100);}
+        j=j+1;
 	}
     }
 }
