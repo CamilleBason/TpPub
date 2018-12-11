@@ -12,8 +12,12 @@ import java.awt.Font;
  *
  * @author crouvera
  */
-public class ChangerCouleur extends  {
-        private Bandeau bd1;
+public class ChangerCouleur extends Effets {
+        
+
+    public ChangerCouleur(Bandeau b, int nb) {
+        super(b, nb);
+    }
         
     
         
