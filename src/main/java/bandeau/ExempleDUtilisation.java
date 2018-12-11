@@ -10,6 +10,13 @@ public class ExempleDUtilisation {
     }
     
     public void exemple() {
+        //
+            //scenario s = new Scenario();
+            //on lui ajoute des effets 
+            //s.addEffect(new FontEnumerator(10),1);
+            //s.addEffect(new Random("lenl",700),1);
+            //bandeau b = new Bandeau();
+            //b.sleep ();
         Font font = monBandeau.getFont();
         Color back = monBandeau.getBackground();
         Color fore = monBandeau.getForeground();
