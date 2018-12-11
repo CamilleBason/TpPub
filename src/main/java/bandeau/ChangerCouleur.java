@@ -13,8 +13,7 @@ import java.awt.Font;
  * @author crouvera
  */
 public class ChangerCouleur extends Effets {
-    private Bandeau bd;
-    private int nb;
+    
         
 
     public ChangerCouleur(Bandeau b, int nb) {
@@ -24,7 +23,7 @@ public class ChangerCouleur extends Effets {
     @Override
     public void jouer(){
         int i=0;
-        while (i<nb){
+        while (i<nbRepetition){
         bd.setMessage("Bonjour");
         bd.setForeground(Color.red);
         bd.sleep(1000);

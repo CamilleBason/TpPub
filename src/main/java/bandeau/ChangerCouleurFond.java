@@ -12,8 +12,7 @@ import java.awt.Color;
  * @author crouvera
  */
 public class ChangerCouleurFond extends Effets {
-    private Bandeau bd;
-    private int nb;
+    
 
     public ChangerCouleurFond(Bandeau b, int nb) {
         super(b, nb);
@@ -22,7 +21,7 @@ public class ChangerCouleurFond extends Effets {
     @Override
     public void jouer(){
         int i=0;
-        while(i<nb){  
+        while(i<nbRepetition){  
             bd.setMessage("Couleur");
            bd.sleep(1000);
         bd.setBackground(Color.DARK_GRAY);

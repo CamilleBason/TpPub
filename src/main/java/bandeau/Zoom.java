@@ -12,8 +12,7 @@ import java.awt.Font;
  * @author cbason
  */
 public class Zoom extends Effets{
-   private Bandeau bd;
-    private int nb;
+   
     
     public Zoom (Bandeau b, int n){
         super (b, n);
@@ -21,9 +20,9 @@ public class Zoom extends Effets{
     }
    @Override
     public void jouer(){
-        bd.setMessage("On va zoomer "+nb+" fois!");
+        bd.setMessage("On va zoomer "+nbRepetition+" fois!");
         int j=0;
-        while (j<=nb){
+        while (j<=nbRepetition){
             for (int i = 5; i < 60 ; i+=5) {
 			bd.setFont(new Font("Dialog", Font.BOLD, 5+i));
 			bd.sleep(100);}

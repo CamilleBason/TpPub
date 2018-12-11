@@ -18,10 +18,10 @@ public class MainScenario {
         // TODO code application logic here
         Bandeau bd= new Bandeau();
         Scenario s= new Scenario();
-        s.addEffet(new TrucQuiTourne(bd,2));
-        //s.addEffet(new Zoom(bd,2));
-        //s.addEffet(new ChangerCouleur(bd,3));
-        //s.addEffet(new ChangerCouleurFond(bd,2));
+        s.addEffet(new TrucQuiTourne(bd,1));
+        s.addEffet(new Zoom(bd,3));
+        s.addEffet(new ChangerCouleur(bd,1));
+        s.addEffet(new ChangerCouleurFond(bd,1));
         s.jouer();
     }
     
