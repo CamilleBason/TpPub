@@ -10,6 +10,7 @@ package bandeau;
  * @author cbason
  */
 public class Scenario {
+    Bandeau bd;
     
     public Scenario(){
         
@@ -17,6 +18,7 @@ public class Scenario {
    
     
     public void addEffet(Effets e){
+        
         
     }
     

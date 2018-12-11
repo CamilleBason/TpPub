@@ -16,8 +16,7 @@ public class Zoom {
     private int nb;
     
     public Zoom (Bandeau b, int n){
-        n=nb;
-        b=bd;
+        super (b, n);
         bd.setMessage("On va zoomer "+nb+" fois!");
         int j=0;
         while (j<=nb){
