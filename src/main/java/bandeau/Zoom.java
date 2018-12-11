@@ -11,13 +11,12 @@ import java.awt.Font;
  *
  * @author cbason
  */
-public class Zoom {
+public class Zoom extends Effets{
    private Bandeau bd;
     private int nb;
     
     public Zoom (Bandeau b, int n){
-        n=nb;
-        b=bd;
+        super (b, n);
         bd.setMessage("On va zoomer "+nb+" fois!");
         int j=0;
         while (j<=nb){
