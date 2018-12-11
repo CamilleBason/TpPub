@@ -17,16 +17,13 @@ public class ChangerCouleur extends Effets {
 
     public ChangerCouleur(Bandeau b, int nb) {
         super(b, nb);
-    }
-        
-    
-        
-        
-        public void ChangerCouleur(Bandeau bd1){
-        
-    	bd1.setForeground(Color.YELLOW);
-        bd1.sleep(1000);
-        bd1.setForeground(Color.RED);
-        bd1.sleep(1000);
+        int i=0;
+        while (i<nb){
+        b.setForeground(Color.red);
+        b.sleep(1000);
+        b.setForeground(Color.RED);
+        b.sleep(1000);
+        i=i+1;
         }
+    }
 }
