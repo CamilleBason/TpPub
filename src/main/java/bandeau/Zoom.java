@@ -11,7 +11,7 @@ import java.awt.Font;
  *
  * @author cbason
  */
-public class Zoom {
+public class Zoom extends Effets{
    private Bandeau bd;
     private int nb;
     
