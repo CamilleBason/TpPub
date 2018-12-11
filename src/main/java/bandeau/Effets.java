@@ -9,15 +9,16 @@
  * @author cbason
  */
 package bandeau;
-public class Effets {
-    private Bandeau bd;
-    private int nbRepetition ;
+public abstract class  Effets {
+    protected Bandeau bd;
+    protected int nbRepetition ;
     
     public Effets(Bandeau b, int nb){
-        b=bd;
+        bd=b;
         nbRepetition=nb;
+    } 
+    
+    public abstract void jouer();
+        
     }
-    
-    
-    
-}
+

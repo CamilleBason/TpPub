@@ -12,11 +12,11 @@ import java.util.ArrayList;
  * @author cbason
  */
 public class Scenario {
-    Bandeau bd;
-    ArrayList<Effets> lesEffets;
+   
+    ArrayList<Effets> lesEffets = new ArrayList<>();
     
     public Scenario(){
-        ArrayList<Effets> lesEffets = new ArrayList<>();
+       // ArrayList<Effets>() ;
     }
    
     
@@ -25,6 +25,9 @@ public class Scenario {
     }
     
     public void jouer(){
+        for(Effets e:lesEffets){
+            e.jouer();
+        }
         
     }
 }

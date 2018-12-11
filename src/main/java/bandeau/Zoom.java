@@ -17,6 +17,10 @@ public class Zoom extends Effets{
     
     public Zoom (Bandeau b, int n){
         super (b, n);
+        
+    }
+   @Override
+    public void jouer(){
         bd.setMessage("On va zoomer "+nb+" fois!");
         int j=0;
         while (j<=nb){

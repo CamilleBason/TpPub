@@ -10,18 +10,23 @@ package bandeau;
  * @author cbason
  */
 public class TrucQuiTourne extends Effets{
-    private Bandeau bd;
-    private int nb;
+    //private Bandeau bd;
+    //private int nb;
     
     public TrucQuiTourne (Bandeau b, int n){
         super (b, n);
-        bd.setMessage("On va tourner "+nb+"  fois!");
+        
+    }
+
+    @Override
+    public void jouer(){
+        bd.setMessage("On va tourner "+nbRepetition+"  fois!");
         int j=0;
-        while (j<=nb){
+        while (j<=nbRepetition){
 	bd.sleep(100);
         for (int i = 0; i <= 100; i++) {
-		b.setRotation(2*Math.PI*i / 100);
-		b.sleep(100);
+		bd.setRotation(2*Math.PI*i / 100);
+		bd.sleep(100);
         j=j+1;
 	}
     }
