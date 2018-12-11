@@ -3,21 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bandeau;
 
 /**
  *
  * @author cbason
  */
-public class Scenario {
+package bandeau;
+public class Effets {
+    private Bandeau bd;
+    private int nbRepetition ;
     
-    public Scenario(){
-        
+    public Effets(Bandeau b, int nb){
+        b=bd;
+        nbRepetition=nb;
     }
-   
     
-    public void addEffet(Effets e){
-        
-    }
+    
     
 }

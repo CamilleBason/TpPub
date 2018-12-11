@@ -12,7 +12,7 @@ import java.awt.Font;
  *
  * @author crouvera
  */
-public class ChangerCouleur {
+public class ChangerCouleur extends  {
         private Bandeau bd1;
         
     
