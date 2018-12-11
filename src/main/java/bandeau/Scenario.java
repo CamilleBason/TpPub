@@ -17,7 +17,7 @@ public class Scenario {
    
     
     public void addEffet(Effets e){
-        
+         
     }
     
 }
