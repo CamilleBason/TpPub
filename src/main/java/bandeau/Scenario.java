@@ -5,21 +5,26 @@
  */
 package bandeau;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author cbason
  */
 public class Scenario {
     Bandeau bd;
+    ArrayList<Effets> lesEffets;
     
     public Scenario(){
-        
+        ArrayList<Effets> lesEffets = new ArrayList<>();
     }
    
     
     public void addEffet(Effets e){
-        
-        
+        lesEffets.add(e);    
     }
     
+    public void jouer(){
+        
+    }
 }

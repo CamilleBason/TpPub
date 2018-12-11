@@ -19,6 +19,7 @@ public class ChangerCouleur extends Effets {
         super(b, nb);
         int i=0;
         while (i<nb){
+        b.setMessage("Bonjour");
         b.setForeground(Color.red);
         b.sleep(1000);
         b.setForeground(Color.RED);
