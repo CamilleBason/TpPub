@@ -24,7 +24,7 @@ public class ChangerCouleur extends Effets {
     public void jouer(){
         int i=0;
         while (i<nbRepetition){
-        bd.setMessage("Bonjour");
+        bd.setMessage("On va changer la couleur de l'écriture");
         bd.setForeground(Color.red);
         bd.sleep(1000);
         bd.setForeground(Color.RED);
