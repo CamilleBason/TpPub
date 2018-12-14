@@ -20,8 +20,8 @@ public class MainScenario {
         Scenario s= new Scenario();
         s.addEffet(new TrucQuiTourne(bd,1));
         s.addEffet(new Zoom(bd,3));
-        s.addEffet(new ChangerCouleur(bd,1));
-        s.addEffet(new ChangerCouleurFond(bd,1));
+        s.addEffet(new ChangerCouleur(bd,2));
+        s.addEffet(new ChangerCouleurFond(bd,2));
         s.jouer();
     }
     

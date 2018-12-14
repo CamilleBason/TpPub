@@ -20,13 +20,20 @@ public class Zoom extends Effets{
     }
    @Override
     public void jouer(){
-        bd.setMessage("On va zoomer "+nbRepetition+" fois!");
-        int j=0;
-        while (j<=nbRepetition){
+//        bd.setMessage("On va zoomer "+nbRepetition+" fois!");
+//        int j=0;
+//        while (j<=nbRepetition){
+//            for (int i = 5; i < 60 ; i+=5) {
+//			bd.setFont(new Font("Dialog", Font.BOLD, 5+i));
+//			bd.sleep(100);}
+//        j=j+1;
+//	}
+        bd.setMessage("On va zoomer "+nbRepetition+" fois !");
+        for(int j=0;j<nbRepetition;j++){
             for (int i = 5; i < 60 ; i+=5) {
 			bd.setFont(new Font("Dialog", Font.BOLD, 5+i));
 			bd.sleep(100);}
-        j=j+1;
-	}
+        }
+        bd.setFont(new Font("Dialog",Font.BOLD,15));
     }
 }

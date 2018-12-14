@@ -13,7 +13,7 @@ import java.awt.Font;
  * @author crouvera
  */
 public class ChangerCouleur extends Effets {
-    
+ 
         
 
     public ChangerCouleur(Bandeau b, int nb) {
@@ -22,15 +22,20 @@ public class ChangerCouleur extends Effets {
     }
     @Override
     public void jouer(){
-        int i=0;
-        while (i<nbRepetition){
-        bd.setMessage("On va changer la couleur de l'écriture");
-        bd.setForeground(Color.red);
-        bd.sleep(1000);
-        bd.setForeground(Color.RED);
-        bd.sleep(1000);
-        i=i+1;
+        for(int i=0;i<nbRepetition;i++){
+            bd.setMessage("changer la couleur");
+            bd.setForeground(Color.RED);
+            bd.sleep(1000);
+            bd.setForeground(Color.BLACK);
+            bd.sleep(1000);
         }
+        //int i=0;
+        //while (i<=nbRepetition){
+        //bd.setMessage("On va changer la couleur de l'écriture");
+        //bd.setForeground(Color.red);
+        //bd.sleep(1000);
+        //i=i+1;
+        //}
     }
     
 }
